@@ -47,14 +47,14 @@ test-cases:
 bugreports:
   - summary: |
     При нажатии на кнопку In Stock пропадает кнопка Next
-    environment: |
+  environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
     macOS Ventura Версия 13.0 (22A380)
-    steps-to-reproduce: |
+  steps-to-reproduce: |
     1. На главной странице нажать на кнопку In Stock
-    expected-result: |
+  expected-result: |
     Выполнится фильтрация, кнопка Next не пропадет
-    actual-result: |
+  actual-result: |
     Кнопка Next пропала (record1.mov)
     
   - summary: |
