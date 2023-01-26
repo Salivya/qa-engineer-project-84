@@ -43,7 +43,7 @@ test-cases:
   - summary: |
       Проверка функции удаления содержимого корзины.
     status: fail
----
+
 bugreports:
  - summary: |
     При нажатии на кнопку In Stock пропадает кнопка Next
