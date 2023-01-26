@@ -43,9 +43,9 @@ test-cases:
   - summary: |
       Проверка функции удаления содержимого корзины.
     status: fail
-
+    
 bugreports:
- - summary: |
+  - summary: |
     При нажатии на кнопку In Stock пропадает кнопка Next
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
@@ -57,7 +57,7 @@ bugreports:
   actual-result: |
     Кнопка Next пропала (record1.mov)
     
- - summary: |
+  - summary: |
     При выборе категории пропадает кнопка Next
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
@@ -70,7 +70,7 @@ bugreports:
   actual-result: |
     Кнопка Next пропала (record2.mov) 
     
- - summary: |
+  - summary: |
     При выборе производителя пропадает кнопка Next
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
@@ -83,7 +83,7 @@ bugreports:
   actual-result: |
     Кнопка Next пропала
     
- - summary: |
+  - summary: |
     При вводе цены пропадает кнопка Next
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
@@ -95,7 +95,7 @@ bugreports:
   actual-result: |
     Кнопка Next пропала  
 
-- summary: |
+  - summary: |
     Не работает функция удаления содержимого из корзины
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
@@ -111,7 +111,7 @@ bugreports:
   actual-result: |
     Товары остаются в корзине (record3.mov)
     
-- summary: |
+  - summary: |
     В поле To можно ввести число меньше чем в поле From
   environment: |
     Safari Версия 16.1 (18614.2.9.1.12)
