@@ -36,7 +36,7 @@
     1. Перейти на главную страницу проекта:https://hexlet-products-store.vercel.app
     2. Нажать на кнопку Previous
     3. Перейти на главную страницу проекта:https://hexlet-products-store.vercel.app
-    4. Нажимать на кнопку Next от страницы к странице
+    4. Нажимать на кнопку Next до последней страницы
   expected-result: |
     Выполняется переход на предыдущую/следующую страницу
   actual-result: |
