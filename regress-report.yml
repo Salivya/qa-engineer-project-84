@@ -37,10 +37,6 @@ test-cases:
     status: pass
     
   - summary: |
-      Проверка функции просмотра содержимого корзины.
-    status: pass
-    
-  - summary: |
       Проверка функции удаления содержимого корзины.
     status: fail
     
