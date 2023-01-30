@@ -46,54 +46,24 @@ test-cases:
     
 bugreports:
   - summary: |
-    При нажатии на кнопку In Stock пропадает кнопка Next
-  environment: |
-    Safari Версия 16.1 (18614.2.9.1.12)
-    macOS Ventura Версия 13.0 (22A380)
-  steps-to-reproduce: |
-    1. На главной странице нажать на кнопку In Stock
-  expected-result: |
-    Выполнится фильтрация, кнопка Next не пропадет
-  actual-result: |
-    Кнопка Next пропала (record1.mov)
-    
-  - summary: |
-    При выборе категории пропадает кнопка Next
-  environment: |
-    Safari Версия 16.1 (18614.2.9.1.12)
-    macOS Ventura Версия 13.0 (22A380)
-  steps-to-reproduce: |
-    1. На главной странице нажать на кнопку Category
-    2. Выбрать любую категорию
-  expected-result: |
-    Выполнится фильтрация, кнопка Next не пропадет
-  actual-result: |
-    Кнопка Next пропала (record2.mov) 
-    
-  - summary: |
-    При выборе производителя пропадает кнопка Next
-  environment: |
-    Safari Версия 16.1 (18614.2.9.1.12)
-    macOS Ventura Версия 13.0 (22A380)
-  steps-to-reproduce: |
-    1. На главной странице нажать на кнопку Brand
-    2. Выбрать любого производителя
-  expected-result: |
-    Выполнится фильтрация, кнопка Next не пропадет
-  actual-result: |
-    Кнопка Next пропала
-    
-  - summary: |
-    При вводе цены пропадает кнопка Next
-  environment: |
-    Safari Версия 16.1 (18614.2.9.1.12)
-    macOS Ventura Версия 13.0 (22A380)
-  steps-to-reproduce: |
-    1. Ввести в разделе Price числовой диапазон
-  expected-result: |
-    Выполнится фильтрация, кнопка Next не пропадет
-  actual-result: |
-    Кнопка Next пропала  
+      Пропадает кнопка Next при фильтрации товаров
+    environment: |
+      Safari Версия 16.1 (18614.2.9.1.12)
+      macOS Ventura Версия 13.0 (22A380)
+    steps-to-reproduce: |
+       1. На главной странице нажать на кнопку In Stock (record1.mov)
+       2. Убрать фильтрацию
+       3. На главной странице нажать на кнопку Category
+       4. Выбрать любую категорию (record2.mov)
+       5. Убрать фильтрацию 
+       6. На главной странице нажать на кнопку Brand
+       7. Выбрать любого производителя
+       8. Убрать фильтрацию
+       9. Ввести в разделе Price числовой диапазон
+    expected-result: |
+      Выполнится фильтрация, кнопка Next не пропадет
+    actual-result: |
+      Кнопка Next пропала  
 
   - summary: |
     Не работает функция удаления содержимого из корзины
